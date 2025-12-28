@@ -1,0 +1,330 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Dhuzz Electric{% endblock %}
+{% block description %}Learn about Dhuzz Electric, Lagos' trusted electrical services provider. 10+ years of experience, 500+ homes powered, committed to safety and excellence.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative min-h-[70vh] hero-gradient flex items-center justify-center">
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
+            <span class="material-symbols-outlined text-primary text-sm">groups</span>
+            <span class="text-primary text-xs font-bold uppercase tracking-wider">Learn about us</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            Innovation. Excellence. Reliability. <br><span class="text-gradient">Dhuzz Electric</span>
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10">
+            Read about us below.
+        </p>
+        <!-- <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{% url 'request_quote' %}" class="px-8 py-4 bg-primary text-dark-bg rounded-full font-bold text-lg hover:bg-primary/90 transition-all">
+                Get Started
+            </a>
+            <a href="{% url 'projects' %}" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all">
+                Our Projects
+            </a>
+        </div> -->
+    </div>
+</section>
+
+<!-- Stats Section -->
+<!--<section class="py-16 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 text-center">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary text-2xl">home</span>
+                    <p class="text-gray-400 text-sm font-bold uppercase tracking-wider">Homes Powered</p>
+                </div>
+                <p class="text-6xl font-black text-primary">500+</p>
+            </div>
+            
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 text-center">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary text-2xl">business</span>
+                    <p class="text-gray-400 text-sm font-bold uppercase tracking-wider">Commercial Projects</p>
+                </div>
+                <p class="text-6xl font-black text-primary">120+</p>
+            </div>
+            
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 text-center">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+                    <p class="text-gray-400 text-sm font-bold uppercase tracking-wider">Years Active</p>
+                </div>
+                <p class="text-6xl font-black text-primary">10+</p>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- Mission & Vision Section -->
+<section class="py-20 bg-dark-card/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] lg:aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-dark-bg flex items-center justify-center">
+                    <div class="text-center p-8">
+                        <span class="material-symbols-outlined text-primary text-9xl mb-6 inline-block">bolt</span>
+                        <!--<div class="flex items-center gap-2 justify-center mb-4">
+                            <span class="material-symbols-outlined text-primary">verified_user</span>
+                            <span class="text-primary font-bold text-sm tracking-wider uppercase">Safety First</span>
+                        </div>
+                        <p class="text-white font-medium max-w-sm mx-auto">
+                            Certified installations complying with Nigerian Standards Organization (SON) guidelines.
+                        </p>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div>
+                    <h2 class="text-4xl font-black mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-4xl">flag</span>
+                        Our Mission
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Our mission is to empower industries to achieve energy efficiency, reduce operational costs, and enhance competitiveness through innovative engineering solutions and expert consulting services. We envision a future where businesses thrive on sustainable energy practices, contributing to a greener and more efficient industrial landscape.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-black mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-4xl">visibility</span>
+                        Our Vision
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        To be the leading Energy partner within West and Central Africa leveraging on new Technologies while ensuring Safety, reliability and sustainability.
+                    </p>
+                </div>
+
+                <!--<div class="flex flex-wrap gap-4 pt-4">
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-dark-card border border-white/10">
+                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                        <span class="font-bold text-sm">NEMSA Certified</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-dark-card border border-white/10">
+                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                        <span class="font-bold text-sm">24/7 Support</span>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-20 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!--<div class="text-center mb-16">
+            <span class="text-primary text-sm font-bold uppercase tracking-wider">Dhuzz Electric</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-2">In a nutshell...</h2>
+        </div>-->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 hover:border-primary/50 transition-all group">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                    <span class="material-symbols-outlined text-primary group-hover:text-dark-bg text-3xl transition-colors">verified</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Our Services</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Dhuzz Electric specializes in helping companies monitor, analyze, and optimize their energy use. Our solutions are designed to align energy consumption with operational needs, minimizing waste and promoting sustainability.
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    We provide tailored strategies and Smart advanced equipment to maximize energy efficiency in industrial processes (W.A.G.E.S). By reducing energy losses, we help clients achieve significant cost savings
+                </p>
+            </div>
+
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 hover:border-primary/50 transition-all group">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                    <span class="material-symbols-outlined text-primary group-hover:text-dark-bg text-3xl transition-colors">bolt</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Proficiency</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Our team comprises of highly qualified engineer’s professionals with several years’ experience of exceptional service delivery. We pride ourselves as being capable of offering excellent services.
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    Our collaboration with Schneider Electric, a global leader in energy management and automation, enables us to provide cutting-edge technologies and reliable solutions to our clients.
+                </p>
+            </div>
+
+            <div class="p-8 bg-dark-card rounded-2xl border border-white/10 hover:border-primary/50 transition-all group">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                    <span class="material-symbols-outlined text-primary group-hover:text-dark-bg text-3xl transition-colors">workspace_premium</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Our Core Values</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    1. Innovation: We embrace cutting-edge technology to deliver exceptional solutions.
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    2. Sustainability: Our commitment to energy efficiency aligns with global environmental Sustainability goals (SDG).
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    3. Excellence: We strive for unparalleled quality in every project and service.
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    4. Partnership: Collaborating with reputable OEMs like Schneider Electric ensures we provide reliable, industry-leading solutions.
+                </p><br>
+                <p class="text-gray-400 leading-relaxed">
+                    5. Customer-Centricity: Client success drives our operations
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<!--<section class="py-20 bg-dark-card/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Our Journey</h2>
+        
+        <div class="space-y-12">
+            <div class="flex gap-8 items-start">
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center border-2 border-primary">
+                        <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-primary/30 mt-4"></div>
+                </div>
+                <div class="pb-12">
+                    <div class="flex items-center gap-4 mb-3">
+                        <h3 class="text-2xl font-bold">Founded in Lagos</h3>
+                        <span class="px-3 py-1 bg-primary/20 text-primary text-sm font-bold rounded-full">2015</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Dhuzz Electric started as a two-man team in Ikeja, focusing on small residential repairs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-8 items-start">
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center border-2 border-primary">
+                        <span class="material-symbols-outlined text-primary text-2xl">handshake</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-primary/30 mt-4"></div>
+                </div>
+                <div class="pb-12">
+                    <div class="flex items-center gap-4 mb-3">
+                        <h3 class="text-2xl font-bold">First Commercial Contract</h3>
+                        <span class="px-3 py-1 bg-primary/20 text-primary text-sm font-bold rounded-full">2017</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Secured our first major contract for a plaza in Victoria Island, marking our entry into commercial services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-8 items-start">
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center border-2 border-primary">
+                        <span class="material-symbols-outlined text-primary text-2xl">groups</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-primary/30 mt-4"></div>
+                </div>
+                <div class="pb-12">
+                    <div class="flex items-center gap-4 mb-3">
+                        <h3 class="text-2xl font-bold">Expanded Team</h3>
+                        <span class="px-3 py-1 bg-primary/20 text-primary text-sm font-bold rounded-full">2020</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Grew to a team of 20 certified engineers and acquired a fleet of service vehicles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-8 items-start">
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center border-2 border-primary">
+                        <span class="material-symbols-outlined text-primary text-2xl">trophy</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-4 mb-3">
+                        <h3 class="text-2xl font-bold">Awarded Best Service</h3>
+                        <span class="px-3 py-1 bg-primary/20 text-primary text-sm font-bold rounded-full">2023</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Recognized for excellence in electrical safety and customer service in Lagos State.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- Team Section -->
+<!--<section class="py-20 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-4">Meet the Experts</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Our team consists of certified engineers and safety specialists dedicated to powering your world.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center group">
+                <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/30 to-dark-card border-4 border-transparent group-hover:border-primary transition-all flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-6xl">person</span>
+                </div>
+                <h3 class="font-bold text-lg">David Okafor</h3>
+                <p class="text-primary text-sm font-medium">Lead Engineer</p>
+            </div>
+
+            <div class="text-center group">
+                <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/30 to-dark-card border-4 border-transparent group-hover:border-primary transition-all flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-6xl">person</span>
+                </div>
+                <h3 class="font-bold text-lg">Sarah Adebayo</h3>
+                <p class="text-primary text-sm font-medium">Project Manager</p>
+            </div>
+
+            <div class="text-center group">
+                <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/30 to-dark-card border-4 border-transparent group-hover:border-primary transition-all flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-6xl">person</span>
+                </div>
+                <h3 class="font-bold text-lg">Emmanuel Cole</h3>
+                <p class="text-primary text-sm font-medium">Safety Officer</p>
+            </div>
+
+            <div class="text-center group">
+                <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/30 to-dark-card border-4 border-transparent group-hover:border-primary transition-all flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-6xl">person</span>
+                </div>
+                <h3 class="font-bold text-lg">Tunde Bakare</h3>
+                <p class="text-primary text-sm font-medium">Senior Technician</p>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- CTA Section -->
+<section class="py-20 bg-dark-card/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-12 md:p-16 overflow-hidden">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-black text-dark-bg mb-2">Ready to light up your space efficiently?</h2>
+                    <p class="text-dark-bg/80 text-lg font-medium">Request our service today.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+2347033553060" class="px-8 py-4 bg-dark-bg text-white rounded-full font-bold hover:bg-dark-card transition-all shadow-xl whitespace-nowrap">
+                        Call Us Now
+                    </a>
+                    <a href="{% url 'request_quote' %}" class="px-8 py-4 bg-white/20 backdrop-blur-sm text-dark-bg rounded-full font-bold hover:bg-white/30 transition-all whitespace-nowrap">
+                        Book Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
