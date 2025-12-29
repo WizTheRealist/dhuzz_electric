@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+:root {
+    --color-primary: #36e27b;
+    --color-dark-bg: #0a1410;
+    --color-dark-card: #122118;
+    --font-sans-main: 'Be Vietnam Pro', sans-serif;
+}
