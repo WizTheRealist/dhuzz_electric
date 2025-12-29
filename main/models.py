@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 class Service(models.Model):
     SERVICE_TYPES = [
@@ -15,7 +16,7 @@ class Service(models.Model):
     service_type = models.CharField(max_length=20, choices=SERVICE_TYPES)
     description = models.TextField()
     icon = models.CharField(max_length=50, default='bolt')
-    image = models.ImageField(upload_to='services/', blank=True, null=True)
+    image = CloudinaryField('service_image', blank=True, null=True)
     is_active = models.BooleanField(default=True)
     order = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -39,7 +40,7 @@ class Project(models.Model):
     project_type = models.CharField(max_length=20, choices=PROJECT_TYPES)
     location = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='projects/')
+    image = CloudinaryField('project_image')
     completion_date = models.DateField(blank=True, null=True)
     is_featured = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -54,7 +55,7 @@ class Project(models.Model):
 class Testimonial(models.Model):
     client_name = models.CharField(max_length=100)
     client_title = models.CharField(max_length=100)
-    client_image = models.ImageField(upload_to='testimonials/', blank=True, null=True)
+    client_image = CloudinaryField('testimonial_image', blank=True, null=True)
     rating = models.IntegerField(default=5, choices=[(i, i) for i in range(1, 6)])
     review = models.TextField()
     is_featured = models.BooleanField(default=False)
